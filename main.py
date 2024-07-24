@@ -43,7 +43,7 @@ def main(page: ft.Page) -> None:
 
     def check_video_status():
         while True:
-            if video.is_completed():
+            if video.is_completed(10000):
                 video_ended()
                 break
 
